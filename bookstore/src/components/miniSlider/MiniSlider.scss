@@ -1,0 +1,60 @@
+.mini-slider{
+    margin-top: 30px;
+    padding-top: 0!important;
+    &-wrappper{
+        padding-top: 20px;
+        border-top: 1px solid #ccc;
+        overflow: hidden;
+        min-height: 750px;
+        .slick-slider{
+            max-width: 730px!important;
+            .slick-arrow{
+                top: 580px;
+                z-index: 100;
+            }
+            .slick-prev{
+                left: -100px;
+            }
+            .slick-next{
+                right: -100px;
+            }
+            .slick-list{
+                overflow: visible;
+            }
+            .image{
+                width: 700px!important;
+                max-height: none!important;
+            }
+            .product_shelf_text{
+                visibility: hidden;
+                opacity: 0;
+                .slogan{
+                    font-family: Lato, sans-serif;
+                    font-size: 17px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    padding: 40px 20px 5px 20px;
+                }
+                .link{
+                    a{
+                        font-family: Lato, sans-serif;
+                        font-size: 16px;
+                        text-decoration: underline;
+                        &:hover{
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            .slick-current{
+                .product_shelf_text{
+                    visibility: visible;
+                    opacity: 1;
+                    transition-property: opacity, visibility;
+                    transition-delay: 0.35s;
+                    transition-duration: 2s;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,278 @@
+.single-book{
+    // &-container{
+
+    // }
+    &-box{
+        max-width: 1440px;
+        margin: auto;
+        padding: 0 100px 60px;
+        .productDetail{
+            display: flex;
+            padding: 2.25rem 0 0 0;
+            margin: 0 40px;
+            .product-{
+                &image{
+                    width: 50%;
+                }
+                &details{
+                    width: 50%;
+                    padding-left: 10px;
+                    .header{
+                        border-bottom: 1px solid #c8c8c8;
+                        margin-bottom: 15px;
+                        .title{
+                            font-family: 'PoynterOS';
+                            font-size: 26px;
+                            margin-bottom: 5px;
+                        }
+                        .author{
+                            font-family: Lato,sans-serif;
+                            font-size: 13px;
+                            .ds{
+                                &:hover{
+                                    color: rgb(96, 104, 111);
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                        .review_stars{
+                            margin: 10px 0px;
+                        }
+                    }
+                    .box{
+                        &-cover{
+                            .cover{
+                                font-family: Lato;
+                                font-size: 13px;
+                                font-weight: 600;
+                                margin-bottom: 5px;   
+                            }
+                        }
+                        &-price{
+                            .price{
+                                font-family: Lato;
+                                font-size: 24px;
+                                font-weight: 700;
+                            }
+                        }
+                        &-buy-btn{
+                            margin-bottom: 10px;
+                            .addtocart{
+                                border: none;
+                                padding: 7px 40px;
+                                background-color: #3d6db5;
+                                color: #fff;
+                                font-family: Lato;
+                                &:hover{
+                                    background-color: #365c93;
+                                }
+                            }
+                        }
+                        &-formats{
+                            .format_price_container{
+                                display: flex;
+                                margin: 20px 0px;
+                            }
+                            .price_cont{
+                                margin: 0px 5px;
+                                .active{
+                                    border: 3px solid #000!important;
+                                    background-color: #F2F2F2;   
+                                }
+                                .link{
+                                    width: 100px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    text-align: center;
+                                    padding: 7px 0px;
+                                    border: 1px solid #c8c8c8;
+                                    height: 58px;
+                                    &:hover{
+                                        border: 3px solid #000;
+                                        background-color: #F2F2F2;
+                                    }
+                                    .format{
+                                        font-family: Lato;
+                                        font-size: 13px;
+                                    }
+                                    .price{
+                                        font-family: Lato;
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .availablity{
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid #c8c8c8;
+                        .info{
+                            font-size: 14px;
+                            font-family: Lato;
+                            margin-left: 10px;
+                        }
+                        img{
+                            width: 23px;
+                        }
+                    }
+                    .shipping{
+                        margin: 10px 0px 20px 0px;
+                        .css-dmmspl-MuiFormGroup-root{
+                            .MuiFormControlLabel-labelPlacementEnd{
+                                margin: 0;
+                                .MuiButtonBase-root{
+                                    padding: 5px;
+                                }
+                                .MuiTypography-root{
+                                    font-family: Lato, sans-serif;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                    .ad{
+                        margin-top: 15px;
+                        img{
+                            width: 20px;
+                        }
+                        &text{
+                            font-family: Lato;
+                            font-size: 14px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .overview{
+            margin-top: 40px;
+            .content{
+                &-title-box{
+                    .title{
+                        font-family: 'PoynterOSDisp';
+                        font-size: 24px;
+                        margin-left: 5px;
+                    }
+                }
+                &-text{
+                    padding: 20px;
+                    border: 1px solid #a1a2a1;
+                    margin-top: 5px;
+                    &-part p{
+                        font-family: Lato;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .prodtabs{
+            margin-top: 60px;
+            margin-bottom: 40px;
+            .productDets{
+                width: 100%;
+                .authordesc{
+                    div{
+                        font-family: Lato;
+                        font-size: 14px;
+                        text-decoration: none;
+                        line-height: 1.88235;
+                    }
+                }
+            }
+            .det-box{
+                display: flex;
+            }
+            .prodtabs{
+                &-tabs{
+                    display: flex;
+                    justify-content: center;
+                    .tabs{
+                        position: relative;
+                        display: flex;
+                        .prodtab_active{
+                            border-top: 1px solid #ccc;
+                            border-left: 1px solid #ccc;
+                            border-bottom: none!important;
+                            border-right: 1px solid #ccc;
+                            &:hover{
+                                .btnn{
+                                    cursor: initial!important;
+                                    text-decoration: none!important;
+                                }
+                            }
+                        }
+                        &::before{
+                            content: "";
+                            display: block;
+                            height: 1px;
+                            width: 50px;
+                            background-color: #ccc;
+                            position: absolute;
+                            bottom: 0px;
+                            left: -50px;
+                        }
+                        .tab{
+                            border-bottom: 1px solid #ccc;
+                            .btnn{
+                                position: relative;
+                                font-family: Lato;
+                                font-size: 14px;
+                                padding: 10px 25px;
+                                &:hover{
+                                    cursor: pointer;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                        &::after{
+                            content: "";
+                            display: block;
+                            height: 1px;
+                            width: 50px;
+                            background-color: #ccc;
+                            position: absolute;
+                            bottom: 0px;
+                            right: -50px;
+                        }
+                    }
+                }
+                &-det{
+                    overflow: hidden;
+                    .title{
+                        text-align: center;
+                    }
+                    &-box{
+                        margin: 0px 300px;
+                        .productDets{
+                            margin: 10px 0px;
+                            .title{
+                                font-family: 'PoynterOS';
+                                font-weight: 600;
+                                font-size: 24px;
+                                margin-bottom: 20px;
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                    .plain{
+                        width: auto;
+                        margin: 0px 150px;
+                        th, td{
+                            padding: 8px 20px;
+                            font-family: Lato;
+                            font-size: 14px;
+                            font-weight: 500;
+                            a{
+                                font-size: 14px;
+                                font-family: Lato;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

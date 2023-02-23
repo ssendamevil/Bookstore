@@ -1,0 +1,168 @@
+.search{
+    &_container{
+        display: flex;
+        align-items: center;
+        margin-right: 80px;
+    }
+    &_form{
+        display: flex;
+        flex-direction: row;
+        width: 775px;
+    }
+    &_dropdown{
+        &_menu{
+            visibility: hidden;
+            opacity: 0;
+            display: flex   ;
+            position: absolute;
+            flex-direction: column;
+            width: 150px;
+            z-index: 1000;
+            background-color: #fff;
+            background-clip: padding-box;
+            box-shadow: 0 2px 3px 0 rgb(0 0 0 / 20%);
+        };
+        &_btn{
+            font-size: 14px;
+            padding: 7px 32px 7px 16px;
+            background: #dddddd;
+            border: 1px solid;
+            border-right: none;
+            height: 39px;
+            position: relative;
+            white-space: nowrap;
+            &_arrow{
+                margin-left: 5px;
+                position: absolute;
+                right: 15px;
+                top: 13px;
+            }
+        }
+        &_item{
+            border-left: 2px solid #c3b58e;
+            padding: 8px 15px;
+            font-size: 14px;
+            &:hover{
+                border-left: 2px solid #c3b58e;
+                background-color: #d8d8d8;
+                text-decoration: underline;
+            }
+            &_active{
+                background-color: #d8d8d8;
+            }
+        }
+    }
+    &_box{
+        &_dropdown{
+            display: block;
+            .active{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        &_btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &_input{
+            height: 39px;
+            position: relative;
+            flex: 1;
+        }
+    }
+
+    &_input{
+        &_result{
+            max-height: 300px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            width: 775px;
+            display: block;
+            flex-direction: column;
+            position: absolute;
+            right: -60px;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0,0,0,.15);
+            z-index: 1000;
+            padding-top: 5px;
+            .disabled{
+                opacity: 0.5;
+            }
+            .result_item{
+                font-size: 14px;
+                padding: 0 0 0 4px!important    ;
+                display: block;
+                width: 100%;
+                clear: both;
+                font-weight: 400;
+                text-align: inherit;
+                white-space: nowrap;
+                background-color: transparent;
+                border: 0;
+                &:hover{
+                    padding: 0 !important;
+                    border-left: 2px solid #000;
+                    background-color: #d8d8d8;
+                }
+                &_label{
+                    font-family: Lato;
+                    font-size: 12px;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.42;
+                    letter-spacing: 0.32px;
+                    display: block;
+                    padding: 0.5rem 24px;
+                    font-weight: 600;
+                    color: #000;
+                }
+            }
+            .first_result::after{
+                content: "";
+                height: 3px;
+                width: 99.5%;
+                position: absolute;
+                background-color: #fff;
+                border-top: 1px solid #bebcbc;
+                border-bottom: 1px solid #bebcbc;
+                right: -0.3px;
+            }
+        }
+        &_field{
+            padding: 7px 16px 7px 12px;
+            border: 1px solid;
+            border-left: none;
+            font-size: 13px;
+            width: 100%;
+            &:focus{
+                outline: none;
+                border-right: initial;
+                box-shadow: none;
+                border-top: solid 2px black;
+                border-bottom: solid 2px black;
+                padding: 7px 16px 7px 10px;
+                border-left: 2px solid black;
+            }
+            &_con{
+                display: flex;
+                position: relative;
+                height: 100%;
+            }
+        }
+    }
+    
+    &_btn{
+        padding: 5px 20px;
+        border: 1px solid;
+        background: black;
+        border-left: none;
+        height: 39px;
+        width: 60px;
+        &:hover{
+            background-color: rgb(49, 48, 48);
+            cursor: pointer;
+        }
+    }
+}

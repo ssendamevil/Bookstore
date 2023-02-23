@@ -1,0 +1,239 @@
+
+.main_content{
+    margin-top: 30px;
+    .header{
+        padding: 0 80px 30px 80px;
+        text-align: center;
+        .title{
+            font-family: 'Poynter';
+            font-size: 28px;
+        }
+        .info{
+            font-family: Lato, sans-serif;
+            font-size: 13px;
+            line-break: 10px;
+        }
+    }
+    .container{
+        padding: 20px;
+        .content{
+            display: flex;
+            width: 100%;
+            .left-navbar{
+                display: flex;
+                max-width: 14%;
+                flex: 0 0 14%;
+                section{
+                    width: 100%;
+                }
+                .sidebar{
+                    &-section{
+                        width: 100%;
+                    }
+                    .section-header{
+                        font-family: Lato, sans-serif;
+                        font-size: 12px;
+                        font-weight: 600;
+                        letter-spacing: .25px;
+                        margin-bottom: 10px;
+                    }
+                    .lists{
+                        margin-bottom: 30px;
+                        .item{
+                            line-height: 1;
+                            margin-top: 15px;
+                            padding-right: 20px;
+                            a{
+                                font-size: 14px;
+                                font-family: Lato, sans-serif;
+                                font-weight: 400;
+                                width: 100%;
+                                line-height: 1.25;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .product-view-section{
+                display: flex;
+                max-width: 86%;
+                flex: 0 0 86%;
+                padding-left: 35px;
+                .category-content{
+                    border-left: 1px solid #ccc;
+                    padding-left: 40px;
+                    width: 100%;
+                    .product-shelf{
+                        .section-header{
+                            font-family: 'Poynter';
+                            font-size: 22px;
+                            text-align: center;
+                            position: relative;
+                            margin-bottom: 40px;
+                            .link{    
+                                display: flow-root;
+                                font-size: 14px;
+                                font-family: Lato, sans-serif;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                            &::after{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                height: 1px;
+                                background-color: #ccc;
+                                top: 14px;
+                                width: calc(100%/2 - 105px);
+                                
+                            }
+                            &::before{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                height: 1px;
+                                background-color: #ccc;
+                                top: 14px;
+                                width: calc(100%/2 - 105px);
+                                right: 0;
+                            }
+                        }
+                        .fivecontent{
+                            display: flex;
+                            margin-bottom: 50px;
+                            .se-{
+                                &link{
+                                    max-width: 210px;
+                                    max-height: unset;
+                                    display: inline-block;
+                                    img{
+                                        object-fit: contain;
+                                        width: 100%;
+                                        padding: 0 7px;
+                                    }
+                                    p{
+                                        text-align: center;
+                                        font-size: 14px;
+                                        font-family: Lato, sans-serif;
+                                        &:hover{
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .slick-slider{
+                            position: relative;
+                            display: block;
+                            margin: 0 auto;
+                            padding: 0;
+                            text-align: center;
+                            overflow: unset;
+                            height: auto;
+                            width: 95%;
+                            z-index: 2;
+                            .slick-arrow{
+                                width: 22px;
+                                height: 13px;
+                            }
+                            .slick-prev{
+                                transform: rotate(90deg);
+                                left: -30px;
+                                top: 40%;
+                            }
+                            .slick-next{
+                                transform: rotate(-90deg);
+                                right: -30px;
+                                top: 40%;
+                            }
+                        }
+                        .product{
+                            &_shelf{
+                                &_info{
+                                    padding: 5px 6px;
+                                    .title, .author{
+                                        text-align: start;
+                                        a{
+                                            font-family: Lato, sans-serif;
+                                            font-size: 14px;
+                                            &:hover{
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                        .linktoauthor{
+                                            span{
+                                                font-family: Lato, sans-serif;
+                                                color: #365c93;
+                                            }
+                                        }
+                                    }
+                                }
+                                &_tile{
+                                    float: left;
+                                    min-height: 1px;
+                                    cursor: pointer;
+                                    padding-right: 0.6rem;
+                                    width: 186px;
+                                    padding: 0 0.7275rem;
+                                    color: #000;
+                                    outline: 0;
+                                    &_img_cont{
+                                        line-height: 1;
+                                        padding: 0;
+                                        align-items: flex-end;
+                                        height: auto!important;
+                                        background-color: transparent;
+                                        display: flex;
+                                        justify-content: center;
+                                        min-width: 8.568rem;
+                                        position: relative;
+                                        outline: 0;
+                                        overflow: hidden;
+                                        margin: 0;
+                                    }
+                                }
+                                &_img{
+                                    position: relative;
+                                    width: auto;
+                                    overflow: unset;
+                                    .image_link{
+                                        display: block;
+                                        line-height: 0;
+                                        text-decoration: none;
+                                        outline: 0;
+                                        overflow: visible;
+                                        text-align: center;
+                                        background-color: #fff;
+                                        img {
+                                            max-height: 243px;
+                                            line-height: 0;
+                                            width: auto;
+                                            outline: 0;
+                                            display: inline-block;
+                                            margin: 0 auto;
+                                            max-width: 100%;
+                                            border: 1px solid transparent;
+                                            image-rendering: -webkit-optimize-contrast;
+                                        }
+                                    }
+                                }
+                            }
+                
+                        }
+                        .slick_track{
+                            align-items: flex-end!important;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,258 @@
+@import '../../styles/variables.scss';
+
+.offcanvas{
+    &-header{
+        padding: 15px 40px!important;
+        border-bottom: 1px solid #c8c8c8;
+        .offcanvas-title{
+            font-family: 'PoynterOS';
+            font-weight: 600;
+        }
+    }
+    &-body{
+        padding: 0!important;
+        .minicart{
+            &-item{
+                border-bottom: 1px solid #c8c8c8;
+                padding-bottom: 20px!important;
+                margin-bottom: 30px;
+                display: flex;
+                .image{
+                    width: 30%;
+                }
+                .desc{
+                    width: 70%;
+                    .counter{
+                        padding-bottom: 20px!important;
+                        padding-top: 20px!important;
+                        button{
+                            font-weight: 300;
+                            height: 44px;
+                            width: 30px;
+                            background: none;
+                            font-size: 20px;
+                            color: #145944!important;
+                            border: none;
+                        }
+                        input{
+                            width: 50px;
+                            text-align: center;
+                            height: 44px;
+                            border: 1px solid;
+                            font-family: Lato, sans-serif;
+                            font-size: 14px;
+                            &:focus{
+                                outline: none;
+                                border: 2px solid #000;
+                            }
+                        }
+                    }
+                    .btns{
+                        display: flex;
+                        div{
+                            input{
+                                border: none;
+                                background: transparent;
+                                font-family: Lato,sans-serif;
+                                font-weight: 400;
+                                font-style: normal;
+                                font-display: swap;
+                                display: inline-block;
+                                color: #347d56;
+                                text-decoration: none;
+                                padding: 0;
+                                cursor: pointer;
+                                font-size: 13px;
+                                line-height: 1.38;
+                                letter-spacing: .2px;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                            .remove_btn{
+                                color: #dd2612!important;
+                            }
+                        }
+
+                    }
+                    .item{
+                        padding-left: 10px;
+                        padding-bottom: 5px;
+                        a{
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                        .title{
+                            padding-left: 0!important;
+                            white-space: unset!important;
+                            font-family: 'PoynterOS';
+                            font-size: 23px!important;
+                            font-weight: 400;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.35;
+                            letter-spacing: normal;
+                            color: #252525!important;
+                        }
+                        .author{
+                            font-family: Lato;
+                            font-size: 12px!important;
+                            font-weight: 600;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: 1.67;
+                            letter-spacing: .23px;
+                            color: #515b5b!important;   
+                        }
+                        .new-price{
+                            font-family: Lato,sans-serif;
+                            font-weight: 700;
+                            font-style: normal;
+                            line-height: 1.6;
+                            letter-spacing: .23px;
+                            color: #000;
+                            font-size: 15px;
+                            margin-right: 5px;
+                        }
+                        .dark-gray{
+                            font-family: Lato,sans-serif;
+                            font-weight: 700;
+                            font-style: normal;
+                            line-height: 1.6;
+                            letter-spacing: .23px;
+                            color: #979d9d;
+                            font-size: 15px;
+                        }
+                        .later{
+                            margin-right: 20px;
+                        }
+                        .availability{
+                            color: #454f56;
+                            line-height: 1.38;
+                            font-size: 13px;
+                            font-family: Lato,sans-serif;
+                        }
+                    }
+                    .type{
+                        font-size: 13px;
+                        font-weight: 600;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.54;
+                        letter-spacing: .25px;
+                        color: #000;
+                        font-family: 'Lato';
+                    }
+                }
+            }
+
+            &-items-list{
+                padding: 20px 40px!important;
+                .empty{
+                    margin: 100px 30px;
+                    text-align: center;
+                    .icon{
+                        img{
+                            width: 45px;
+                        }
+                    }
+                    .warn{
+                        font-family: Lato,sans-serif;
+                        font-size: 14px;
+                        font-weight: 600;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    &-footer{
+        .order-total-{
+            &container{
+                padding: 20px 50px;
+                padding-bottom: 50px;
+                background: #f0f0f0;
+                border-top: 2px solid #353535;
+                form{
+                    text-align: center;
+                    .checkout{
+                        background-color: #3e5962!important;
+                        color: #fff!important;
+                        margin-bottom: 0;
+                        border: none;
+                        height: 45px;
+                        font-family: Lato;
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+
+                    .or{
+                        font-size: 13px;
+                        font-weight: 600;
+                        font-family: Lato;
+                        position: relative;
+                        &::after{
+                            content: "";
+                            display: block;
+                            height: 1px;
+                            position: absolute;
+                            width: 95px;
+                            background-color: #c8c8c8;
+                            bottom: 4px;
+                        }
+                        &::before{
+                            content: "";
+                            display: block;
+                            height: 1px;
+                            position: absolute;
+                            width: 95px;
+                            background-color: #c8c8c8;
+                            bottom: 5px;
+                            right: 0px;
+                        }
+                    }
+                    .orpayment{
+                        .paypal{
+                            background-color: #ffc439;
+                            padding: 2px 20px;
+                            border-radius: 5px;
+                            margin-right: 10px;
+                            margin-top: 15px;
+                            .p1{
+                                width: 20px;
+                            }
+                            .p2{
+                                width: 60px;
+                            }
+                        }
+                        .visa{
+                            img{
+                                width: 150px;
+                            }
+                        }
+                        button{
+                            border:none;
+                        }
+                    }
+                }
+            }
+            &title{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+                .total-price{
+                    font-family: Lato, sans-serif;
+                }
+                .title{
+                    font-family: Lato, sans-serif;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    line-height: 2;
+                    letter-spacing: .75px;
+                }
+            }
+        }
+    }
+}

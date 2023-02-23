@@ -1,0 +1,41 @@
+.items-con{
+    width: 30%;
+    min-width: 30%;
+    padding-left: 20px;
+    .pr-ed-info{
+        .title{
+            font-family: Lato, sans-serif;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .para{
+            padding-top: 10px;
+            .text{
+                font-size: 14px;
+                font-family: Lato, sans-serif;
+            }
+        }
+    }
+}
+
+.bookslider{
+    width: 62%;
+    margin-left: 70px;
+    padding-left: 40px;
+    border-left: 1px solid #ccc;
+    .sh-tile{
+        padding: 0!important;
+    }
+    .shelf-{
+        &image{
+            max-height: 200px!important;
+        }
+        &info{
+            padding-left: 35px!important;
+            padding-right: 35px!important;
+            a{
+                font-size: 13px!important;
+            }
+        }
+    }
+}

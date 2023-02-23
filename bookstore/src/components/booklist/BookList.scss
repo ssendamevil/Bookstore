@@ -1,0 +1,114 @@
+.books{
+    &_section{
+        max-width: 1440px;
+        padding: 2.25rem 2.846rem!important;
+        margin: 0 auto;
+        margin-bottom: 1.25rem!important;
+        &_header{
+            margin-bottom: 1.5rem!important;
+            .header{
+                float: left!important;
+                font-family: 'PoynterOSDisp';
+                font-size: 1.8rem;
+                width: 80%;
+            }
+            .all_link{
+                display: flex;
+                justify-content: flex-end;
+                float: right;
+                font-size: 14px;
+                color: #000;
+                text-decoration: underline;
+                width: 20%;
+                font-family: 'Lato';
+                margin-top: 0.75rem!important;
+            }
+            .clear{
+                clear: both;
+            }
+        }
+        .slick-slider{
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+            overflow: unset;
+            height: auto;
+            width: 95%;
+            z-index: 2;
+            .slick-arrow{
+                width: 22px;
+                height: 13px;
+            }
+            .slick-prev{
+                transform: rotate(90deg);
+                left: -30px;
+            }
+            .slick-next{
+                transform: rotate(-90deg);
+                right: -30px;
+            }
+        }
+        .product{
+            &_shelf{
+                &_tile{
+                    float: left;
+                    min-height: 1px;
+                    cursor: pointer;
+                    padding-right: 0.6rem;
+                    width: 186px;
+                    padding: 0 0.7275rem;
+                    color: #000;
+                    outline: 0;
+                    &_img_cont{
+                        line-height: 1;
+                        padding: 0;
+                        align-items: flex-end;
+                        height: auto!important;
+                        background-color: transparent;
+                        display: flex;
+                        justify-content: center;
+                        min-width: 8.568rem;
+                        position: relative;
+                        outline: 0;
+                        overflow: hidden;
+                        margin: 0;
+                    }
+                }
+                &_img{
+                    position: relative;
+                    width: auto;
+                    overflow: visible;
+                    .image_link{
+                        display: block;
+                        line-height: 0;
+                        text-decoration: none;
+                        outline: 0;
+                        overflow: visible;
+                        text-align: center;
+                        background-color: #fff;
+                        img {
+                            max-height: 243px;
+                            line-height: 0;
+                            width: auto;
+                            outline: 0;
+                            display: inline-block;
+                            margin: 0 auto;
+                            max-width: 100%;
+                            border: 1px solid transparent;
+                            image-rendering: -webkit-optimize-contrast;
+                        }
+                    }
+                }
+            }
+
+        }
+        .slick_track{
+            align-items: flex-end!important;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+    }
+}

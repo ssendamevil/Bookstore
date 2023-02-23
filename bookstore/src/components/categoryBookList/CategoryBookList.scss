@@ -1,0 +1,136 @@
+.shelf-of-books{
+    
+    .book-container{
+        padding-bottom: 40px;
+        padding-top: 40px;
+        border-bottom: 1px solid #ccc;
+        .row{
+            .col-lg-3{
+                display: flex;
+                justify-content: center;
+                .number{
+                    width: 10%;
+                    text-align: center;
+                    font-family: Lato, sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                .image-con{
+                    .linktobook{
+                        img{
+                            max-width: 150px;
+                        }
+                    }
+                }
+            }
+            .col-lg-9{
+                .con-{
+                    &title{
+                        .titleof-book{
+                            line-height: 1;
+                            font-size: 15.5px;
+                            a{
+                                font-family: Lato,sans-serif;
+                                font-size: 17px;
+                                padding: 0;
+                                margin: 0;
+                                line-height: 1.25;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                    &author{
+                        a{
+                            font-family: Lato, sans-serif;
+                            font-size: 13px;
+                            span{
+                                font-family: Lato, sans-serif;
+                                color: #3d6db5;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                    &pricing{
+                        margin-top: 30px;
+                        table{
+                            width: 100%;
+                            .heading{
+                                th{
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                    font-family: Lato, sans-serif;
+                                    padding-bottom: 5px;
+                                    border-bottom: 1px solid #ccc;
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    td{
+                                        padding: 5px 0px;
+                                        vertical-align: top;
+                                        font-size: 13px;
+                                        font-weight: 400;
+                                        font-family: Lato, sans-serif;
+                                        padding-bottom: 5px;
+                                        border-bottom: 1px solid #ccc;
+                                        
+                                        a{
+                                            line-height: 1;
+                                        }
+                                    }
+                                    .format{
+                                        a{
+                                            color: #3d6db5;
+                                            font-size: 13px;
+                                            font-weight: 400;
+                                            font-family: Lato, sans-serif;
+                                            &:hover{
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    .bookstore{
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .bottom-btn{
+                    display: flex;
+                    margin-top: 50px;
+                    justify-content: space-between;
+                    .format-variants{
+                        .formats{
+                            font-size: 14px;
+                            font-family: Lato, sans-serif;
+                            a{
+                                font-family: Lato, sans-serif;
+                                color: #3d6db5;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                    .con-btn{
+                        input{
+                            padding: 7px 50px;
+                            background-color: #3d6db5;
+                            color: #fff;
+                            border: none;
+                            font-size: 15px;
+                            font-family: Lato, sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

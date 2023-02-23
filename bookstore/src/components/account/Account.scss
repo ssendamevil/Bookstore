@@ -1,0 +1,45 @@
+.account{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    .header{
+        padding: 0 80px 30px 80px;
+        text-align: center;
+        .heading{
+            font-family: 'Poynter';
+            font-size: 28px;
+        }
+    }
+    .account-settings-{
+        &sidebar{
+            border-right: 1px solid #ccc;
+            padding-right: 0;
+            .sidebar{
+                .lists{
+                    .item{
+                        border-bottom: 1px solid #ccc;
+                        &:hover{
+                            background-color: #e3e2e2;
+                        }
+                        a{
+                            font-size: 14px;
+                            font-family: Lato, sans-serif;
+                            font-weight: 600;
+                            color: #484848;
+                            padding: 15px 40px 15px 20px;
+                            width: 100%;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    .active{
+                        background-color: #e3e2e2;
+                    }
+                }
+            }
+        }
+        &main{
+            padding-left: 50px;
+        }
+    }
+}

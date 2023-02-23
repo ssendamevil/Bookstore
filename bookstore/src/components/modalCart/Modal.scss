@@ -1,0 +1,113 @@
+
+.modal{
+    display: block;
+    opacity: 1!important;
+    .modal{
+        &-header{
+            padding:10px 20px 10px;
+            background-color: #efd1bc;
+            border: none;
+            border-radius: 0;
+            .modal-title{
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 500;
+                margin-left: 140px;   
+            }
+        }
+        &-dialog{
+            max-width: 600px;
+        }
+        &-content{
+            border-radius: 0;
+        }
+        &-body{
+            display: flex;
+            .tumbnail{
+                width: 30%;
+                text-align: center;
+                img{
+                    width: 100px;
+                }
+            }
+            .desc{
+                width: 70%;
+                .info{
+                    font-family: Lato;
+                    font-weight: 600;
+                    font-size: 13.5px;
+                    &_box{
+                        padding-bottom: 10px;
+                        margin-bottom: 10px;
+                        border-bottom: 1px solid #c8c8c8;
+                    }
+                }
+                .price_title{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 5px;
+                    .title{
+                        font-family: 'PoynterOSDisp';
+                        font-size: 18px;
+                    }
+                    .price{
+                        font-family: Lato;
+                        font-size: 16px;
+                        margin-right: 10px;
+                    }
+                }
+                .author{
+                    margin-bottom: 5px;
+                    .authorName{
+                        font-family: Lato;
+                        font-size: 14px;
+                        .link{
+                            font-family: Lato;
+                            font-size: 13px;
+                            color: #347d56;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                .format_price_qty{
+                    display: flex;
+                    font-family: Lato;
+                    font-size: 13px;
+                    margin-top: 15px;
+                    margin-bottom: 20px;
+                    div:first-child{
+                        padding-left: 0px;
+                    }
+                    div{
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+                }
+                .btns{
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: flex-end;
+                    .btn{
+                        font-family: Lato!important;
+                        font-size: 13.2px;
+                        padding: 7px 25px;
+                        border-radius: 0;
+                        font-weight: 500;
+
+                        &-secondary{
+                            margin-right: 10px;
+                        }
+                        &-primary{
+                            background-color: #346250;
+                            &:hover{
+                                background-color: #254d3e;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

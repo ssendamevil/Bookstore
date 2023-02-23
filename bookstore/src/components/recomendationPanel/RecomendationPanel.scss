@@ -1,0 +1,11 @@
+.rec-container{
+    .billboard{
+        &-content{
+            &-link{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
